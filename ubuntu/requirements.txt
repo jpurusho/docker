@@ -1,0 +1,8 @@
+setuptools
+psutil
+colorama
+termcolor
+jsonpickle
+requests
+rm
+websockets
