@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #Install oh-my-zsh
-mkdir -p dev/dotfiles
+test ! -d dev/dotfiles && mkdir -p $_
 test -f zshrc && cp $_ .zshrc
 test -f zsh-prompt.sh && cp $_ dev/dotfiles
 test -f zshrc && cp $_ dev/dotfiles
