@@ -1,0 +1,11 @@
+services:
+  nissi-dev:
+    image: jpurshot/nissi-dev:1.1
+    container_name: nissi-dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ~/dev
+        target: /home/docker/dev
