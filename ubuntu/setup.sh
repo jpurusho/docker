@@ -13,3 +13,4 @@ git clone https://github.com/amix/vimrc.git ~/.vim_runtime && /bin/sh ~/.vim_run
 test -f dev/dotfiles/zshrc && cp $_ .zshrc
 test -f zshrc && rm -f $_
 test -f zsh-prompt.sh && rm -f $_
+exit 0
