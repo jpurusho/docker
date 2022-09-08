@@ -2,6 +2,7 @@ services:
   nissi-dev:
     image: jpurshot/nissi-dev:1.1
     container_name: nissi-dev
+    tty: true # The docker entry command (zsh) attaches to terminal, and you get interactive prompt
     build:
       context: .
       dockerfile: ./Dockerfile

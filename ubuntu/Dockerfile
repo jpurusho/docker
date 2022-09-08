@@ -47,4 +47,4 @@ COPY setup.sh ./.setup.sh
 RUN  pip3 install --no-cache-dir -r requirements.txt && rm requirements.txt && \
     sudo chown -R ${USER}:${USER} /home/${USER} &&  /home/${USER}/.setup.sh
 
-CMD ["/bin/zsh"]
+ENTRYPOINT  ["/bin/zsh"]
