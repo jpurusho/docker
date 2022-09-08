@@ -1,0 +1,13 @@
+services:
+  build-web:
+    image: jpurshot/buildweb:1.0
+    container_name: build-web
+    ports:
+      - 8080:80
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ~/git/cypress/build/release
+        target: /build
