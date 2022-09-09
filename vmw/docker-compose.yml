@@ -1,0 +1,12 @@
+services:
+  pyvmomi-dev:
+    image: jpurshot/pyvmomi
+    container_name: pyvmomi-dev
+    tty: true # The docker entry command (zsh) attaches to terminal, and you get interactive prompt
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ~/dev/docker/vmw/dev
+        target: /app/dev
