@@ -32,6 +32,7 @@ RUN apt-get update && \
     curl                           \
     iputils-ping                   \
     uuid-dev                       \
+    jq                             \
     tree                           \
     zsh                         && \
     useradd -d /home/${USER} -m ${USER} -s /bin/zsh && \
